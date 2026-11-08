@@ -37,6 +37,17 @@ namespace Rasta.UI
             InitializeComponent();
             this.commentText = commentText;
 
+            try
+            {
+                HeaderIcon.Source = new System.Windows.Media.Imaging.BitmapImage(
+                    new Uri("pack://application:,,,/Rasta;component/Resources/Icon.png", UriKind.Absolute));
+                HeaderIcon.Visibility = Visibility.Visible;
+            }
+            catch (Exception)
+            {
+                // The icon is decorative; the popup works without it.
+            }
+
             MaxWidth = settings.MaxWidth;
             HeaderGrid.Visibility = settings.ShowHeader ? Visibility.Visible : Visibility.Collapsed;
 

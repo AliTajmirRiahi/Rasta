@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/icon.png" alt="Rasta icon" width="128" /></p>
+
 # Rasta – Persian RTL Comments
 
 **Rasta** (راستا — "direction, alignment") is a Visual Studio extension that shows Persian/Arabic code comments, mixed with English words, identifiers, numbers and punctuation, correctly right-to-left in a hover popup.

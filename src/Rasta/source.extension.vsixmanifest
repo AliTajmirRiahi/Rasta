@@ -6,6 +6,7 @@
     <Description xml:space="preserve">Shows Persian/Arabic code comments mixed with English correctly (RTL) in a hover popup.</Description>
     <License>LICENSE</License>
     <Icon>Resources\Icon.png</Icon>
+    <PreviewImage>Resources\Preview.png</PreviewImage>
     <Tags>persian, farsi, arabic, rtl, bidi, comments, quickinfo, hover</Tags>
   </Metadata>
   <Installation>
