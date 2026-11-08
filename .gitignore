@@ -1,0 +1,11 @@
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.vsix
+*.log
+packages/
+TestResults/
+.vscode/
+*.rsuser

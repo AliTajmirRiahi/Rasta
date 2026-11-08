@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <RootNamespace>Rasta.Tests</RootNamespace>
+    <AssemblyName>Rasta.Tests</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- The pure-logic sources are compiled into the test assembly directly, so the tests need no Visual Studio SDK. -->
+    <Compile Include="..\..\src\Rasta\Text\BidiRun.cs" Link="Text\BidiRun.cs" />
+    <Compile Include="..\..\src\Rasta\Text\BidiRunSplitter.cs" Link="Text\BidiRunSplitter.cs" />
+    <Compile Include="..\..\src\Rasta\Text\CommentTextCleaner.cs" Link="Text\CommentTextCleaner.cs" />
+    <Compile Include="..\..\src\Rasta\Text\RtlTextDetector.cs" Link="Text\RtlTextDetector.cs" />
+    <Compile Include="..\..\src\Rasta\Text\TextDirection.cs" Link="Text\TextDirection.cs" />
+    <Compile Include="BidiRunSplitterTests.cs" />
+    <Compile Include="CommentTextCleanerTests.cs" />
+    <Compile Include="RtlTextDetectorTests.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="3.11.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.11.1" />
+  </ItemGroup>
+
+</Project>
